@@ -3,11 +3,11 @@ import tkinter as tkt
 
 def on_click(number):
     entry.insert(tkt.END, number)
-
+ 
 def create_button(text, row, column, command, width=13, height=9, columnspan=1, rowspan=1,bg=None):
    button = tkt.Button(root, text=text, padx=width, pady=height, command=command, font=('Consolas', '14', 'bold'),bg= bg, borderwidth=4)
    button.grid(row=row, column=column, columnspan=columnspan, rowspan=rowspan, sticky='nsew')
-
+ 
 def on_clear():
     entry.delete(0, tkt.END)
 
