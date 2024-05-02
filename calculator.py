@@ -1,6 +1,6 @@
 from tkinter import Tk
 import tkinter as tkt
- 
+
 def on_click(number):
     entry.insert(tkt.END, number)
 
